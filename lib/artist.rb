@@ -6,7 +6,7 @@ class Artist
   #extend Findable 
   
   
-  attr_accessor :name, :genre 
+  attr_accessor :name
   attr_reader :songs  
   
   @@all = [] 
@@ -21,15 +21,15 @@ class Artist
   end 
   
   def save 
-    self.class.all << self 
+    @@all << self 
   end 
   
   def self.destroy_all 
-    all.clear 
+    @@all.clear 
   end 
   
   def self.create(name) 
-    artist = new(name) 
+    artist = self.new(name) 
     artist.save
     artist 
   end 
