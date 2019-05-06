@@ -1,4 +1,4 @@
-=begin 
+
 require 'pry'
 
 class Artist 
@@ -48,8 +48,9 @@ class Artist
   
 end
 
-=end 
 
+
+=begin 
 require 'pry'
 # require_relative "../config/environment.rb"
 
@@ -101,3 +102,5 @@ class Artist
     songs.collect { |song| song.genre}.uniq
   end
 end
+
+=end 
