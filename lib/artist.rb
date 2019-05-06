@@ -1,4 +1,4 @@
-=> begin 
+=begin 
 require 'pry'
 
 class Artist 
@@ -48,4 +48,5 @@ class Artist
   
 end
 
-=
+=end 
+
