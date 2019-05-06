@@ -5,8 +5,8 @@ class Artist
   #extend Findable 
   
   
-  attr_accessor :name 
-  attr_reader :songs :genre  
+  attr_accessor :name, :genre 
+  attr_reader :songs  
   
   @@all = [] 
   
